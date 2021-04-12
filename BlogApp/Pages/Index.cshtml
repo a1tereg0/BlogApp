@@ -4,7 +4,18 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1 class="display-3 mb-3">Most recent posts</h1>
+@foreach (var item in Model.Blog)
+{
+    <div class="card text-center mb-4">
+        <div class="card-body">
+            <h5 class="card-title">@item.Title</h5>
+            <p class="card-text">@item.Body.Substring(0, item.Body.Length/2)</p>
+            <a href="#">Read More...</a>
+        </div>
+        <div class="card-footer text-muted">
+            <span class="mr-2">@item.PublishDate</span><span>@item.Author.FullName</span>
+        </div>
+    </div>
+}
+

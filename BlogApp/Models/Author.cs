@@ -52,5 +52,8 @@ namespace BlogApp.Models
 
         public ICollection<Blog> blogs;
 
+        [NotMapped]
+        public string FullName => FirstName + " " + LastName;
+
     }
 }
