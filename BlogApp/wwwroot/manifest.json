@@ -1,0 +1,24 @@
+{
+  "name": "Blog App",
+  "short_name": "Blog",
+  "description": "This is a simple blogging application. ",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "orientation": "natural",
+  "lang": "English",
+  "screenshots": [],
+  "icons": [
+    {
+      {
+        "src": "icons/icon-144.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-512.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      }
+    }
+  ]
+}
