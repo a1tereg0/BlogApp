@@ -175,3 +175,4 @@ C:\Users\prasa\source\repos\BlogApp\BlogApp\obj\Debug\net5.0\Razor\Pages\Admin\B
 C:\Users\prasa\source\repos\BlogApp\BlogApp\obj\Debug\net5.0\Razor\Pages\Admin\BlogPages\Details.cshtml.g.cs
 C:\Users\prasa\source\repos\BlogApp\BlogApp\obj\Debug\net5.0\Razor\Pages\Admin\BlogPages\Edit.cshtml.g.cs
 C:\Users\prasa\source\repos\BlogApp\BlogApp\obj\Debug\net5.0\Razor\Pages\Admin\BlogPages\Index.cshtml.g.cs
+C:\Users\prasa\source\repos\BlogApp\BlogApp\obj\Debug\net5.0\Razor\Pages\BlogPost.cshtml.g.cs

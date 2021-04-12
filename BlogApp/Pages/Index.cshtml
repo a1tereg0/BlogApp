@@ -11,7 +11,7 @@
         <div class="card-body">
             <h5 class="card-title">@item.Title</h5>
             <p class="card-text">@item.Body.Substring(0, item.Body.Length/2)</p>
-            <a href="#">Read More...</a>
+            <a href="./BlogPost?id=@item.BlogID">Read More...</a>
         </div>
         <div class="card-footer text-muted">
             <span class="mr-2">@item.PublishDate</span><span>@item.Author.FullName</span>
