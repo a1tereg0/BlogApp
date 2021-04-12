@@ -1,0 +1,75 @@
+﻿@page
+@model BlogApp.Pages.Admin.AuthorPages.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Author</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Author.AuthorID" />
+            <div class="form-group">
+                <label asp-for="Author.FirstName" class="control-label"></label>
+                <input asp-for="Author.FirstName" class="form-control" />
+                <span asp-validation-for="Author.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author.LastName" class="control-label"></label>
+                <input asp-for="Author.LastName" class="form-control" />
+                <span asp-validation-for="Author.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author.Birthday" class="control-label"></label>
+                <input asp-for="Author.Birthday" class="form-control" />
+                <span asp-validation-for="Author.Birthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author.EmailAddress" class="control-label"></label>
+                <input asp-for="Author.EmailAddress" class="form-control" />
+                <span asp-validation-for="Author.EmailAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author.WebAddress" class="control-label"></label>
+                <input asp-for="Author.WebAddress" class="form-control" />
+                <span asp-validation-for="Author.WebAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author.PhoneNumber" class="control-label"></label>
+                <input asp-for="Author.PhoneNumber" class="form-control" />
+                <span asp-validation-for="Author.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author.Country" class="control-label"></label>
+                <input asp-for="Author.Country" class="form-control" />
+                <span asp-validation-for="Author.Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author.Province" class="control-label"></label>
+                <input asp-for="Author.Province" class="form-control" />
+                <span asp-validation-for="Author.Province" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author.PostalCode" class="control-label"></label>
+                <input asp-for="Author.PostalCode" class="form-control" />
+                <span asp-validation-for="Author.PostalCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
