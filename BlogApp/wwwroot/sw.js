@@ -5,7 +5,7 @@ let urls = [
     "/css/site.css",
     "/js/site.js"
 ];
-self.addEventListener('install', (event) => {
+self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(DEFAULT_CACHE)
             .then(function (cache) {
@@ -14,15 +14,11 @@ self.addEventListener('install', (event) => {
     );
 });
 
-self.addEventListener('fetch', function (event) {
+
+self.addEventListener('fetch', (event) => {
     event.respondWith(
-        caches.match(event.request)
-            .then(function (response) {
-                // There has been hit in cache so, return the response
-                if (response) {
-                    return response;
-                }
-                return fetch(event.request);
-            })
+        caches.match(event.request).then((resp) => {
+            return resp || fetch(event.request).then((response) => response);
+        })
     );
 });
